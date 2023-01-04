@@ -2,6 +2,7 @@
 
 from nltk.tokenize import RegexpTokenizer
 
+# path = sky.txt
 path = input()
 tokenizer = RegexpTokenizer("[а-я]+(?:-[a-z]+)*")
 para = ''
