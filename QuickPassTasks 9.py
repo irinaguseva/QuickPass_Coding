@@ -13,5 +13,6 @@ for line in file:
     para += line + ' '
 
 text_without_trash = [w for w in set(tokenizer.tokenize(para)) if not any(c.isdigit() for c in w)]
-text_without_trash.sort(reverse=True)
+text_without_trash = sorted(text_without_trash)
+text_without_trash = sorted(text_without_trash, key = lambda x : x[-1])
 print(*text_without_trash)
